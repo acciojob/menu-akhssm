@@ -3,21 +3,25 @@ import "./styles/App.css";
 
 const Menu = ({ items }) => {
   return (
-    <div className="menu-container">
+    <div className="menu-section">
       {items.map((item) => (
-        <div
+        <article
           key={item.id}
           className="menu-item"
           data-test-id={`menu-item-${item.category.toLowerCase()}`}
         >
-          <img src={item.img} alt={item.title} className="menu-img" />
-          <div className="menu-info">
+          <img src={item.img} alt={item.title} className="photo" />
+
+          <div className="item-info">
             <header>
               <h4>{item.title}</h4>
               <h4 className="price">{item.price}</h4>
             </header>
+            <p className="item-text">
+              {item.desc ? item.desc : "Delicious food item"}
+            </p>
           </div>
-        </div>
+        </article>
       ))}
     </div>
   );
