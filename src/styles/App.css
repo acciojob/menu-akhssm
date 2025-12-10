@@ -1,12 +1,84 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f1f5f8;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+#main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #102a42;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: #c59d5f;
+  margin: 0.5rem auto 2rem;
+}
+
+.btn-container {
+  margin-bottom: 2rem;
+}
+
+.btn-container button {
+  background: transparent;
+  border: none;
+  margin: 0 10px;
+  font-size: 1rem;
+  color: #c59d5f;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-container button:hover {
+  background: #c59d5f;
+  color: white;
+}
+
+.menu-section {
+  display: grid;
+  gap: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.photo {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid #c59d5f;
+  border-radius: 8px;
+}
+
+.item-info {
+  text-align: left;
+}
+
+.menu-item header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #617d98;
+}
+
+.price {
+  color: #c59d5f;
+  font-weight: 700;
+}
+
+.item-text {
+  margin-top: 1rem;
+  color: #617d98;
+  line-height: 1.5;
 }
